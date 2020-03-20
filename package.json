@@ -1,13 +1,16 @@
 {
-  "name": "ssr-pug-stylus",
+  "name": "gnietto-corner",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "sitio web personal simple",
+  "main": "app.js",
+  "engines": {
+    "node": "12.x"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "gnietto",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
