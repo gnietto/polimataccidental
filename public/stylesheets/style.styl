@@ -1,22 +1,8 @@
-/*
- * Import nib
- */
 @import 'nib'
-
-/*
- * Grab a custom font from Google
- */
 @import url('http://fonts.googleapis.com/css?family=Quicksand')
 
-/*
- * Nib provides a CSS reset
- */
 global-reset()
 
-/*
- * Store the main color and
- * background color as variables
- */
 main-color = #fa5b4d
 background-color = #faf9f0
 
@@ -31,38 +17,28 @@ header
   color #fff
   font-size 25px
   text-align center
-
-  /*
-   * Note the use of the `main-color`
-   * variable and the `darken` function
-   */
   background-color main-color
   border-bottom 1px solid darken(main-color, 30%)
   text-shadow 0px -1px 0px darken(main-color, 30%)
 
 .container
-  width 500px
+  width 80%
   margin 50px auto
   overflow hidden
 
 .main-content
   float left
-  width 300px
+  width 65%
+  text-align justify
 
   p
     margin-bottom 20px
 
 .sidebar
   float left
-  width 200px
+  width 35%
 
   .widget
-
-    /*
-     * Note the lack of vendor
-     * prefixes here. Nib will
-     * add them for us
-     */
     border-radius 3px
     border 1px solid #ccc
     margin-left 20px
@@ -86,8 +62,9 @@ p
   line-height 1.8
 
 footer
-  width 500px
+  width 80%
   margin 50px auto
   border-top 1px dotted #ccc
   padding-top 5px
   font-size 13px
+  text-align center
