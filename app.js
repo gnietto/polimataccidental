@@ -40,5 +40,9 @@ if (!isDev && cluster.isMaster) {
 		res.render('index', {title: 'Inicio'})
 	});
 
+	app.get('/2020-03-21-primer-post', function (req, res) {
+		res.render('2020-03-21-primer-post', {title: 'Primer Post'})
+	});
+
 	app.listen(PORT);
 }
