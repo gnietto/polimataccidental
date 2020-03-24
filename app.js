@@ -1,10 +1,11 @@
-const express = require('express');
-const stylus = require('stylus');
-const nib = require('nib');
+const path = require('path');
 const cluster = require('cluster');
 const numCPUs = require('os').cpus().length;
 const isDev = process.env.NODE_ENV !== 'production';
 const PORT = process.env.PORT || 5000;
+const express = require('express');
+const stylus = require('stylus');
+const nib = require('nib');
 
 
 if (!isDev && cluster.isMaster) {
@@ -24,7 +25,7 @@ if (!isDev && cluster.isMaster) {
 			.use(nib())
 	};
 
-	app.set('views', __dirname + '/views');
+	app.set('views', [path.join(__dirname, 'views'), path.join(__dirname, 'views/2020'), path.join(__dirname, 'views/2020/03')]);
 	app.set('view engine', 'pug');
 
 	app.use(stylus.middleware(
@@ -40,8 +41,8 @@ if (!isDev && cluster.isMaster) {
 		res.render('index', {title: 'Inicio'})
 	});
 
-	app.get('/2020-03-22-consejos-en-tiempos-de-sars-coronavirus-2', function (req, res) {
-		res.render('2020-03-22-consejos-en-tiempos-de-sars-coronavirus-2', {title: 'Consejos en Tiempos de SARS Coronavirus 2'})
+	app.get('/2020/03/22-consejos-en-tiempos-de-sars-coronavirus-2', function (req, res) {
+		res.render('22-consejos-en-tiempos-de-sars-coronavirus-2', {title: 'Consejos en Tiempos de SARS Coronavirus 2'})
 	});
 
 	app.listen(PORT);
