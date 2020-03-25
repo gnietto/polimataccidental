@@ -95,10 +95,10 @@ body {
   color: #444;
 }
 header {
-  font-family: 'Quicksand';
+  font-family: 'Roboto';
   padding: 50px 10px;
   color: #fff;
-  font-size: 25px;
+  font-size: 2.75rem;
   text-align: center;
   background-color: #fa5b4d;
   border-bottom: 1px solid #df1806;
@@ -115,12 +115,19 @@ header {
   text-align: justify;
 }
 .main-content .titulo {
-  font-size: 1.5rem;
+  font-size: 1.65rem;
   font-weight: 700;
   padding-bottom: 0.75rem;
+  text-align: center;
 }
 .main-content p {
   margin-bottom: 20px;
+}
+.main-content ul {
+  padding-bottom: 0.75rem;
+}
+.main-content ul li {
+  padding-bottom: 0.675rem;
 }
 .sidebar {
   float: left;
@@ -148,7 +155,7 @@ header {
   margin-bottom: 10px;
 }
 p {
-  line-height: 1.5;
+  line-height: 1.4;
 }
 footer {
   width: 80%;

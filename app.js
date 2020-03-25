@@ -42,7 +42,7 @@ if (!isDev && cluster.isMaster) {
 	});
 
 	app.get('/2020/03/22-consejos-en-tiempos-de-sars-coronavirus-2', function (req, res) {
-		res.render('22-consejos-en-tiempos-de-sars-coronavirus-2', {title: 'Consejos en Tiempos de SARS Coronavirus 2'})
+		res.render('22-consejos-en-tiempos-de-sars-coronavirus-2', {title: 'Consejos en Tiempos de SARS CoronaVirus 2'})
 	});
 
 	app.listen(PORT);
