@@ -41,8 +41,12 @@ if (!isDev && cluster.isMaster) {
 		res.render('index', {title: 'Inicio'})
 	});
 
-	app.get('/2020/03/22-consejos-en-tiempos-de-sars-coronavirus-2', function (req, res) {
-		res.render('22-consejos-en-tiempos-de-sars-coronavirus-2', {title: 'Consejos en Tiempos de SARS CoronaVirus 2'})
+	app.get('/2020/03/22-reflexiones-en-tiempos-de-sars-coronavirus-2', function (req, res) {
+		res.render('22-reflexiones-en-tiempos-de-sars-coronavirus-2', {title: 'Reflexiones en Tiempos de COVID-19'})
+	});
+
+	app.get('/2020/03/27-next', function (req, res) {
+		res.render('27-next', {title: 'next'})
 	});
 
 	app.listen(PORT);
