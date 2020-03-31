@@ -45,8 +45,8 @@ if (!isDev && cluster.isMaster) {
 		res.render('22-reflexiones-en-tiempos-de-sars-coronavirus-2', {title: 'Reflexiones en Tiempos de COVID-19'})
 	});
 
-	app.get('/2020/03/27-next', function (req, res) {
-		res.render('27-next', {title: 'next'})
+	app.get('/2020/03/31-aprendizaje-individual-y-organizacional', function (req, res) {
+		res.render('31-aprendizaje-individual-y-organizacional', {title: 'Desde el Aprendizaje Individual hacia el Aprendizaje Organizacional'})
 	});
 
 	app.listen(PORT);
