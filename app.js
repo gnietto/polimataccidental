@@ -25,7 +25,7 @@ if (!isDev && cluster.isMaster) {
 			.use(nib())
 	};
 
-	app.set('views', [path.join(__dirname, 'views'), path.join(__dirname, 'views/2020'), path.join(__dirname, 'views/2020/03')]);
+	app.set('views', [path.join(__dirname, 'views'), path.join(__dirname, 'views/2020/03'), path.join(__dirname, 'views/2020/04')]);
 	app.set('view engine', 'pug');
 
 	app.use(stylus.middleware(
@@ -47,6 +47,10 @@ if (!isDev && cluster.isMaster) {
 
 	app.get('/2020/03/31-aprendizaje-individual-y-organizacional', function (req, res) {
 		res.render('31-aprendizaje-individual-y-organizacional', {title: 'Desde el Aprendizaje Individual hacia el Aprendizaje Organizacional'})
+	});
+
+	app.get('/2020/04/07-formas-vida-semivida-presentes-nuestro-planeta-tierra', function (req, res) {
+		res.render('07-formas-vida-semivida-presentes-nuestro-planeta-tierra', {title: 'El Árbol de la Vida & Semivida en el Planeta Tierra'})
 	});
 
 	app.listen(PORT);
