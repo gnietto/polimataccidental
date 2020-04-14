@@ -1,15 +1,19 @@
 doctype
 html
   head
-    title #{title} | Polímata Accidental 
-    link(rel='stylesheet', type='text/css', href='/stylesheets/style.css', )
+    title #{title} | Polímata Accidental
+    link(rel='stylesheet', type='text/css', href='/stylesheets/semantic.css')
+    script(src='/semantic.js')
+    script(src='/jquery-3.1.1.min.js')
   body
-    header
+    header.ui.header.block.dividing
       h1 Polímata Accidental
-    .container
-      .main-content
-        block content
-      .sidebar
-        block sidebar
+
+    section
+      block content
+
+    section
+      block cards
+
     footer
-      p Todo el crédito del blog es para 'Polímata Accidental', Nodejs, Pug & Stylus.
+      p Todo el crédito del blog es para 'Polímata Accidental', Nodejs, Pug & Stylus
