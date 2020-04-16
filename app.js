@@ -42,15 +42,15 @@ if (!isDev && cluster.isMaster) {
 	});
 
 	app.get('/2020/03/22-reflexiones-en-tiempos-de-sars-coronavirus-2', function (req, res) {
-		res.render('22-reflexiones-en-tiempos-de-sars-coronavirus-2', {title: 'Reflexiones Libres en Tiempos de COVID-19 / SARS-CoV-2'})
+		res.render('22-reflexiones-en-tiempos-de-sars-coronavirus-2', {title: 'Reflexiones Libres en Tiempos de COVID-19'})
 	});
 
 	app.get('/2020/03/31-aprendizaje-individual-y-organizacional', function (req, res) {
-		res.render('31-aprendizaje-individual-y-organizacional', {title: 'Desde el Aprendizaje Individual hacia el Aprendizaje Organizacional'})
+		res.render('31-aprendizaje-individual-y-organizacional', {title: 'Aprendizaje Individual & Aprendizaje Organizacional'})
 	});
 
 	app.get('/2020/04/07-formas-vida-semivida-presentes-nuestro-planeta-tierra', function (req, res) {
-		res.render('07-formas-vida-semivida-presentes-nuestro-planeta-tierra', {title: 'El Árbol de la Vida & Semivida en el Planeta Tierra'})
+		res.render('07-formas-vida-semivida-presentes-nuestro-planeta-tierra', {title: 'El Árbol de la Vida en el Planeta Tierra'})
 	});
 
 	app.listen(PORT);
