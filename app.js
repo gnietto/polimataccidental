@@ -19,14 +19,40 @@ if (!isDev && cluster.isMaster) {
 } else {
   const app = express();
 
+  const posts = [
+  	{
+  		handle: 'reflexiones-sobre-el-covid19',
+  		titulo: 'Reflexiones sobre el Covid19',
+  		descripcion: 'En este post presento pensamientos acerca del entorno que ha rodeado al Covid19', 
+  		fecha: '01 Julio 2020'
+  	},
+  	{
+  		handle: 'el-arbol-de-la-vida',
+  		titulo: 'El Árbol de la Vida',
+  		descripcion: '¿Cuál es la diversidad presente en nuestro mundo? Descúbrela aquí',
+  		fecha: '07 Julio 2020'
+  	},
+  	{
+  		handle: 'proximo-post-1',
+  		titulo: 'proximo post 1',
+  		descripcion: 'blabla',
+  		fecha: 'soon'
+  	},
+  	{
+  		handle: 'proximo-post-2',
+  		titulo: 'proximo post 2',
+  		descripcion: 'blabla',
+  		fecha: 'soon'
+  	}
+  ]
+	
+	app.use(express.static(__dirname + '/public'));
+
 	function compile(str, path) {
 		return stylus(str)
 			.set('filename', path)
 			.use(nib())
 	};
-
-	app.set('views', [path.join(__dirname, 'views'), path.join(__dirname, 'views/2020/03'), path.join(__dirname, 'views/2020/04')]);
-	app.set('view engine', 'pug');
 
 	app.use(stylus.middleware(
 			{
@@ -35,22 +61,17 @@ if (!isDev && cluster.isMaster) {
 			}
 		)
 	);
-	app.use(express.static(__dirname + '/public'));
 
-	app.get('/', function (req, res) {
-		res.render('index', {title: 'Inicio'})
+	app.set('views', [path.join(__dirname, 'views')]);
+	app.set('view engine', 'pug');
+
+
+	app.get('/', (req, res) => {
+		res.render('index', {posts});
 	});
 
-	app.get('/2020/03/22-reflexiones-en-tiempos-de-sars-coronavirus-2', function (req, res) {
-		res.render('22-reflexiones-en-tiempos-de-sars-coronavirus-2', {title: 'Reflexiones Libres en Tiempos de COVID-19'})
-	});
-
-	app.get('/2020/03/31-aprendizaje-individual-y-organizacional', function (req, res) {
-		res.render('31-aprendizaje-individual-y-organizacional', {title: 'Aprendizaje Individual & Aprendizaje Organizacional'})
-	});
-
-	app.get('/2020/04/07-formas-vida-semivida-presentes-nuestro-planeta-tierra', function (req, res) {
-		res.render('07-formas-vida-semivida-presentes-nuestro-planeta-tierra', {title: 'El Árbol de la Vida en el Planeta Tierra'})
+	app.get('/posts/:handle', (req, res) => {
+		res.render('posts/${req.params.handle}', {posts});
 	});
 
 	app.listen(PORT);

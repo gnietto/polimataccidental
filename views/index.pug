@@ -3,57 +3,15 @@ extend layout
 block content
   h1 Bienvenidos!
   p
-    | El objetivo del presente blog es ejercitar mi habilidad de levantar una web app usando Nodejs, Pug y Stylus. Por ahora la frecuencia de actualización es muy lenta. Por otra parte, el nombre del blog 'polímata accidental' es bastante pretencioso, me gustaría hacerle honor a semejante apelativo en un futuro. Sin perjuicio de lo anterior, el mencionado subdominio suena interesante así que lo conservo.
+    | El objetivo del presente blog es ejercitar mi habilidad de levantar una web app usando Nodejs, Pug y Stylus. Por ahora la frecuencia de actualización es muy lenta. Por otra parte, el nombre del blog 'polímata accidental' es sumamente pretencioso, aunque me gustaría hacerle honor a semejante apelativo en un futuro. Sin perjuicio de lo anterior, el mencionado subdominio suena interesante así que lo conservo.
+
+  each post in posts
+    div
+      h3 #{post.titulo}
+      p #{post.fecha}
+      p #{post.descripcion}
+      a(href='/posts/${post.handle}') Ver post
 
 
-block cards
-  .ui.two.cards.stackable
-    .card
-      .image
-        a(href='/2020/03/22-reflexiones-en-tiempos-de-sars-coronavirus-2')
-          img.ui.fluid.image(src='/imgs/virus_mers_rdx.jpg' alt='mers virus')
-      .content
-        h2 Reflexiones Libres en Tiempos de SARS-CoV-2
-        p En Chile, el primer caso registrado de infección por el virus SARS-CoV-2 se registró el 3 de Marzo del 2020...
-      .extra.content
-        p 22 Marzo 2020
 
-    .card
-      .image
-        a(href='/2020/03/31-aprendizaje-individual-y-organizacional')
-          img.ui.fluid.image(src='/imgs/apzjemusica_rdx.jpg' alt='efectos de aprendizaje')
-      .content
-        h2 Aprendizaje Individual & Organizacional
-        p Todos estamos familiarizados intuitivamente y por experiencia con el proceso de aprendizaje individual...
-      .extra.content
-        p 31 Marzo 2020
 
-    .card
-      .image
-        a(href='/2020/04/07-formas-vida-semivida-presentes-nuestro-planeta-tierra')
-          img.ui.fluid.image(src='/imgs/virus_mers_rdx.jpg' alt='mers virus')
-      .content
-        h2 El Árbol de la Vida en nuestro Tercer Planeta
-        p La pandemia de COVID-19 vigente coloca en el tapete las redes de relaciones entre todas las entidades biológicas que conforman la gama de vida presente en el planeta Tierra...
-      .extra.content
-        p 07 Abril 2020
-
-    .card
-      .image
-        a(href='#')
-          img.ui.fluid.image(src='/imgs/waiting_rdx.jpg' alt='esqueleto esperando')
-      .content
-        h2 Finanzas Personales & Empresariales Básicas
-        p En el Chile del tercer decenio del siglo XXI, las personas *deben* saber lo básico de finanzas personales y empresariales para que no les metan el dedo en la boca...
-      .extra.content
-        p _ Abril 2020
-
-    .card
-      .image
-        a(href='#')
-          img.ui.fluid.image(src='/imgs/waiting_rdx.jpg' alt='esqueleto esperando')
-      .content
-        h2 La Doctrina de la Verdad
-        p La Doctrina de la Verdad es un término que incorporé leyendo algunos textos de divulgación científica del economista Tim Hardford...
-      .extra.content
-        p _ Abril 2020
