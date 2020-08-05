@@ -34,13 +34,13 @@ if (!isDev && cluster.isMaster) {
   	},
   	{
   		handle: 'proximo-post-1',
-  		titulo: 'proximo post 1',
+  		titulo: 'Próximo post 1',
   		descripcion: 'blabla',
   		fecha: 'soon'
   	},
   	{
   		handle: 'proximo-post-2',
-  		titulo: 'proximo post 2',
+  		titulo: 'Próximo post 2',
   		descripcion: 'blabla',
   		fecha: 'soon'
   	}
@@ -71,7 +71,7 @@ if (!isDev && cluster.isMaster) {
 	});
 
 	app.get('/posts/:handle', (req, res) => {
-		res.render('posts/${req.params.handle}', {posts});
+		res.render(`posts/${req.params.handle}`);
 	});
 
 	app.listen(PORT);

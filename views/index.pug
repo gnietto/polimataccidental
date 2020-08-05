@@ -1,17 +1,13 @@
-extend layout
+extend ./layout
 
 block content
   h1 Bienvenidos!
   p
-    | El objetivo del presente blog es ejercitar mi habilidad de levantar una web app usando Nodejs, Pug y Stylus. Por ahora la frecuencia de actualización es muy lenta. Por otra parte, el nombre del blog 'polímata accidental' es sumamente pretencioso, aunque me gustaría hacerle honor a semejante apelativo en un futuro. Sin perjuicio de lo anterior, el mencionado subdominio suena interesante así que lo conservo.
+    | El objetivo del presente blog es ejercitar mi habilidad de levantar una web app usando Nodejs, Pug y Stylus. El nombre del blog 'polímata accidental' es bastante pretencioso, aunque me gustaría hacerle honor a semejante apelativo en un futuro. Igualmente suena interesante, así que prefiero conservarlo tal cual.
 
   each post in posts
     div
       h3 #{post.titulo}
       p #{post.fecha}
       p #{post.descripcion}
-      a(href='/posts/${post.handle}') Ver post
-
-
-
-
+      a(href=`/posts/${post.handle}`) Ver post

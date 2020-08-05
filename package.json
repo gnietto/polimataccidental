@@ -1,7 +1,7 @@
 {
-  "name": "gnietto-corner",
+  "name": "polimata-accidental",
   "version": "1.0.0",
-  "description": "sitio web personal simple",
+  "description": "demo de sitio web con nodejs, pug, stylus",
   "main": "app.js",
   "engines": {
     "node": "12.x"
