@@ -46,13 +46,15 @@ if (!isDev && cluster.isMaster) {
   	}
   ]
 	
-	app.use(express.static(__dirname + '/public'));
 
 	function compile(str, path) {
 		return stylus(str)
 			.set('filename', path)
 			.use(nib())
 	};
+
+	app.set('views', [path.join(__dirname, 'views')]);
+	app.set('view engine', 'pug');
 
 	app.use(stylus.middleware(
 			{
@@ -61,10 +63,8 @@ if (!isDev && cluster.isMaster) {
 			}
 		)
 	);
-
-	app.set('views', [path.join(__dirname, 'views')]);
-	app.set('view engine', 'pug');
-
+  
+	app.use(express.static(__dirname + '/public'));
 
 	app.get('/', (req, res) => {
 		res.render('index', {posts});
@@ -74,5 +74,7 @@ if (!isDev && cluster.isMaster) {
 		res.render(`posts/${req.params.handle}`);
 	});
 
-	app.listen(PORT);
+	app.listen(PORT, () => {
+    console.log(`Servidor web inicializado en el puerto ${PORT}`)
+  });
 }
