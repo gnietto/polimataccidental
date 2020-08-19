@@ -90,23 +90,41 @@ a img {
   border: none;
 }
 header {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
   border: solid 1px;
   background: #6495ed;
   height: 10vh;
 }
 header h1 {
-  text-align: center;
   font-size: 2.25rem;
   font-family: "Helvetica Neue";
 }
 .presentacion {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-family: "Helvetica Neue";
-  padding: 1rem 1rem 1rem 1rem;
+  padding: 1rem;
 }
 .lista-posts {
   border: groove 1px;
   background: #ffefd5;
+  padding: 1rem 1rem;
 }
 .lista-posts h3 {
   font-size: 1.5rem;
@@ -116,5 +134,5 @@ header h1 {
   font-size: 1.25rem;
 }
 .posts {
-  padding: 1.1rem 1rem 1.1rem 1rem;
+  padding: 1rem 0;
 }
