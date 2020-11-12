@@ -23,26 +23,16 @@ if (!isDev && cluster.isMaster) {
   	{
   		handle: 'reflexiones-sobre-el-covid19',
   		titulo: 'Reflexiones sobre el Covid19',
-  		descripcion: 'En este post presento pensamientos acerca del entorno que ha rodeado al Covid19', 
+      autor: 'Polímata Accidental',
+  		descripcion: 'Pensamientos acerca del entorno que ha rodeado al Covid19', 
   		fecha: '01 Julio 2020'
   	},
   	{
   		handle: 'el-arbol-de-la-vida',
   		titulo: 'El Árbol de la Vida',
-  		descripcion: '¿Cuál es la diversidad presente en nuestro mundo? Descúbrela aquí',
+      autor: 'Polímata Accidental',
+  		descripcion: '¿Conoces la tremenda diversidad biológica presente en nuestro mundo?',
   		fecha: '07 Julio 2020'
-  	},
-  	{
-  		handle: 'proximo-post-1',
-  		titulo: 'Próximo post 1',
-  		descripcion: 'blabla',
-  		fecha: 'soon'
-  	},
-  	{
-  		handle: 'proximo-post-2',
-  		titulo: 'Próximo post 2',
-  		descripcion: 'blabla',
-  		fecha: 'soon'
   	}
   ]
 	

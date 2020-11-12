@@ -1,10 +1,10 @@
 {
   "name": "polimata-accidental",
   "version": "1.0.0",
-  "description": "demo de sitio web con nodejs, pug, stylus",
+  "description": "blog personal",
   "main": "app.js",
   "engines": {
-    "node": "12.x"
+    "node": "14.x"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

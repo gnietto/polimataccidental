@@ -2,13 +2,16 @@ extend ./layout
 
 block content
 	.presentacion
-		h1 Bienvenidos!
-		p Hola a todos! Presento a ustedes el blog 'polímata accidental' cuyas finalidades son presentar puntos de vista provenientes de distintas áreas del saber y, a la vez, ejercitar mi habilidad de levantar una web app simple usando Nodejs, Pug y Stylus. El nombre del blog es bastante pretencioso, lo sé, pero como suena igualmente interesante, prefiero conservarlo tal cual.
+		h1 Estimados lectores
+		p.parrafo Presento a ustedes mi blog 'Polímata Accidental' cuya finalidad es ejercitar la opinología basada en evidencia y compartir artículos interesantes de terceras personas traducidos al castellano si fuere necesario.
 
-	.lista-posts
+		p.parrafo Sí, sí, sí... Sé que el nombre del blog suena pretencioso, pero como suena interesante, prefiero conservarlo tal cual.
+
+	.lista-cards
 		each post in posts
-			.posts
+			.cards
 				h3 #{post.titulo}
-				p #{post.fecha}
-				p #{post.descripcion}
+				p.autor #{post.autor}
+				p.autor #{post.fecha}
+				p.descripcion #{post.descripcion}
 				a(href=`/posts/${post.handle}`) Ver post

@@ -3,36 +3,105 @@
 global-reset()
 
 header
-  display flex
-  justify-content center
-  align-items center
-  border solid 1px
-  background cornflowerblue
-  height 10vh
+  position fixed
+  display block
+  height 100vh
+  width 20vw
+  background linear-gradient(45deg, green, cornflowerblue)
+  text-align center
 
   h1
-    font-size 2.25rem
-    font-family "Helvetica Neue"
-
-.presentacion
-  font-size 1.2rem
-  font-family "Helvetica Neue"
-  padding 1rem  
-
-.lista-posts
-  border groove 1px
-  background papayawhip
-  padding 1rem 1rem
-
-  h3
-    font-size 1.50rem
-    text-decoration italic
+    font-size 2rem
+    font-family Georgia
+    color white
+    padding 30vh 1rem 0 1rem
 
   p
-    font-size 1.25rem
+    font-size 1.1rem
+    font-family Georgia
+    color white
+    padding-top 1.2rem 
 
-.posts
-  padding 1rem 0
-  border solid 1px
-  margin 0.7rem 0
-  box-shadow 5px 5px blue
+section
+  position relative
+  display block
+  width 75vw
+  margin-left 20vw
+  padding 0 1rem
+
+  .presentacion
+    font-family Georgia
+    font-size 21px
+    line-height 32px
+    padding 1.4rem 3rem 1.2rem 3rem
+
+    h1
+      font-size 2.2rem
+      text-align left
+      padding-bottom 0.7rem
+
+    .parrafo
+      padding-bottom 1rem
+
+  .lista-cards
+    display flex
+    flex-direction row-reverse
+    flex-wrap wrap
+    justify-content space-between
+    padding 0 2.2rem 0 2.2rem
+
+    h3
+      font-size 1.50rem
+      text-decoration italic
+
+    p
+      font-size 1.1rem      
+
+    .cards    
+      width 320px
+      height 30vh
+      padding 1.5rem
+      margin 20px
+      border 15px solid #fff
+      box-shadow 0 5px 35px rgba(0,0,0,0.08)
+      border-radius 5%
+      font-family Georgia
+
+    .autor
+      font-family "Helvetica Neue"
+      color rgb(117, 117, 117)
+      font-size 1rem
+
+    .descripcion
+      padding-top 0.6rem
+
+
+  .titulopost
+    font-size 48px
+    font-family Georgia
+    text-align center
+    padding 1rem 2rem
+
+  .parrafopost
+    font-size 21px
+    line-height 32px
+    font-family Georgia
+    word-break break-word
+    letter-spacing -0.063px
+    margin 2em 15% -0.46em 15%
+    color rgb(41, 41, 41)
+
+
+  .titulobiblio
+    font-size 1.2rem
+    font-weight 800
+    font-family Georgia
+    margin 2em 15% -1.7em 15%
+
+  .biblio
+    font-size 1.1rem
+    font-family Georgia
+    margin 2em 15% -0.46em 15%
+
+  .li
+    padding 0 0 0.7rem 0.7rem
