@@ -224,3 +224,6 @@ section .biblio {
   font-family: Georgia;
   line-height: 1.1rem;
 }
+section .span {
+  font-weight: 800;
+}
