@@ -188,13 +188,14 @@ section .lista-cards .autor {
   font-size: 1rem;
 }
 section .lista-cards .descripcion {
-  padding-top: 0.6rem;
+  padding: 0.6rem 0 1.25rem 0;
+  height: 3rem;
 }
 section .titulopost {
   font-size: 48px;
   font-family: Georgia;
   text-align: center;
-  padding: 1rem 2rem;
+  padding: 1rem 2rem 0 2rem;
 }
 section .parrafopost {
   font-size: 21px;
@@ -202,20 +203,24 @@ section .parrafopost {
   font-family: Georgia;
   word-break: break-word;
   letter-spacing: -0.063px;
-  margin: 2em 15% -0.46em 15%;
+  margin: 2em 15% -0.46em 20%;
   color: #292929;
+}
+section .parrafopost p {
+  padding-top: 1rem;
+}
+section .parrafopost h3 {
+  padding-top: 1rem;
+  padding-bottom: -0.2rem;
+  font-weight: 800;
 }
 section .titulobiblio {
   font-size: 1.2rem;
   font-weight: 800;
   font-family: Georgia;
-  margin: 2em 15% -1.7em 15%;
 }
 section .biblio {
   font-size: 1.1rem;
   font-family: Georgia;
-  margin: 2em 15% -0.46em 15%;
-}
-section .li {
-  padding: 0 0 0.7rem 0.7rem;
+  line-height: 1.1rem;
 }

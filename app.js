@@ -21,18 +21,20 @@ if (!isDev && cluster.isMaster) {
 
   const posts = [
   	{
-  		handle: 'reflexiones-sobre-el-covid19',
-  		titulo: 'Reflexiones sobre el Covid19',
+  		handle: 'acerca-del-covid19',
+  		titulo: 'Acerca del Covid19',
       autor: 'Polímata Accidental',
-  		descripcion: 'Pensamientos acerca del entorno que ha rodeado al Covid19', 
-  		fecha: '01 Julio 2020'
+  		descripcion: 'Evidencia general acerca del Covid19',
+  		fecha: '10 Noviembre 2020',
+      tags: 'biología'
   	},
   	{
   		handle: 'el-arbol-de-la-vida',
   		titulo: 'El Árbol de la Vida',
       autor: 'Polímata Accidental',
-  		descripcion: '¿Conoces la tremenda diversidad biológica presente en nuestro mundo?',
-  		fecha: '07 Julio 2020'
+  		descripcion: 'Resumen de la diversidad biológica',
+  		fecha: '15 Noviembre 2020',
+      tags: 'biología'
   	}
   ]
 	
@@ -65,6 +67,6 @@ if (!isDev && cluster.isMaster) {
 	});
 
 	app.listen(PORT, () => {
-    console.log(`Servidor web inicializado en el puerto ${PORT}`)
+    console.log(`Servidor web iniciado en puerto ${PORT}`)
   });
 }
