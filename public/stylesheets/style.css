@@ -94,11 +94,13 @@ header {
   display: block;
   height: 100vh;
   width: 20vw;
-  background: -webkit-linear-gradient(45deg, #008000, #6495ed);
-  background: -moz-linear-gradient(45deg, #008000, #6495ed);
-  background: -o-linear-gradient(45deg, #008000, #6495ed);
-  background: -ms-linear-gradient(45deg, #008000, #6495ed);
-  background: linear-gradient(45deg, #008000, #6495ed);
+  background: url("../imgs/mujer-leyendo--.jpg"), -webkit-linear-gradient(45deg, #008000, #6495ed);
+  background: url("../imgs/mujer-leyendo--.jpg"), -moz-linear-gradient(45deg, #008000, #6495ed);
+  background: url("../imgs/mujer-leyendo--.jpg"), -o-linear-gradient(45deg, #008000, #6495ed);
+  background: url("../imgs/mujer-leyendo--.jpg"), -ms-linear-gradient(45deg, #008000, #6495ed);
+  background: url("../imgs/mujer-leyendo--.jpg"), linear-gradient(45deg, #008000, #6495ed);
+  background-blend-mode: soft-light;
+  background-position: center;
   text-align: center;
 }
 header h1 {
@@ -201,7 +203,6 @@ section .parrafopost {
   font-size: 21px;
   line-height: 32px;
   font-family: Georgia;
-  word-break: break-word;
   letter-spacing: -0.063px;
   margin: 2em 15% -0.46em 20%;
   color: #292929;
