@@ -25,7 +25,8 @@ if (!isDev && cluster.isMaster) {
   		titulo: 'Acerca del Covid19',
       autor: 'Polímata Accidental',
   		descripcion: 'Evidencia general acerca de la enfermedad Covid19',
-  		fecha: '10 Noviembre 2020',
+  		fecha: '10 Noviembre 2020.',
+      actualizacion: '-',
       tags: 'biología'
   	},
   	{
@@ -34,6 +35,7 @@ if (!isDev && cluster.isMaster) {
       autor: 'Polímata Accidental',
   		descripcion: 'Resumen de la diversidad biológica de nuestro planeta',
   		fecha: '15 Noviembre 2020',
+      actualizacion: '18 Noviembre 2020',
       tags: 'biología'
   	}
   ]
