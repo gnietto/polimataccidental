@@ -101,6 +101,9 @@ header {
   background: url("../imgs/mujer-leyendo--.jpg"), linear-gradient(45deg, #008000, #6495ed);
   background-blend-mode: soft-light;
   background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
   text-align: center;
 }
 header h1 {
@@ -206,6 +209,12 @@ section .parrafopost {
   letter-spacing: -0.063px;
   margin: 2em 15% -0.46em 20%;
   color: #292929;
+  -webkit-hyphens: manual;
+  -moz-hyphens: manual;
+  -ms-hyphens: manual;
+  hyphens: manual;
+  -webkit-hyphens: manual;
+  -ms-hyphens: manual;
 }
 section .parrafopost p {
   padding-top: 1rem;
