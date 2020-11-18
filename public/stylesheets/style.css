@@ -237,3 +237,6 @@ section .biblio {
 section .span {
   font-weight: 800;
 }
+section .cursiva {
+  font-style: italic;
+}
