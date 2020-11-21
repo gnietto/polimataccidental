@@ -37,7 +37,16 @@ if (!isDev && cluster.isMaster) {
   		fecha: '15 Noviembre 2020',
       actualizacion: '18 Noviembre 2020',
       tags: 'biología'
-  	}
+  	},
+    {
+      handle: 'chile-vuelve-ser-chile',
+      titulo: 'Chile vuelve a ser Chile',
+      autor: 'Testimonios',
+      descripcion: 'Testimonio biográfico',
+      fecha: '21 Noviembre 2020',
+      actualizacion: '-',
+      tags: 'biografias'
+    }
   ]
 	
 
