@@ -20,33 +20,30 @@ if (!isDev && cluster.isMaster) {
   const app = express();
 
   const posts = [
-  	{
-  		handle: 'acerca-del-covid19',
-  		titulo: 'Acerca del Covid19',
-      autor: 'Polímata Accidental',
-  		descripcion: 'Evidencia general acerca de la enfermedad Covid19',
-  		fecha: '10 Noviembre 2020.',
-      actualizacion: '-',
-      tags: 'biología'
-  	},
-  	{
-  		handle: 'el-arbol-de-la-vida',
-  		titulo: 'El Árbol de la Vida',
-      autor: 'Polímata Accidental',
-  		descripcion: 'Resumen de la diversidad biológica de nuestro planeta',
-  		fecha: '15 Noviembre 2020',
-      actualizacion: '18 Noviembre 2020',
-      tags: 'biología'
-  	},
     {
       handle: 'chile-vuelve-ser-chile',
       titulo: 'Chile vuelve a ser Chile',
       autor: 'Hermógenes Pérez de Arce',
       descripcion: 'En tiempos de confusión, a los ancianos se les escucha',
-      fecha: '22 Noviembre 2020',
-      actualizacion: '-',
+      fecha: '22 Noviembre 2020',      
       tags: 'política'
-    }
+    },
+  	{
+  		handle: 'el-arbol-de-la-vida',
+  		titulo: 'El Árbol de la Vida',
+      autor: 'Polímata Accidental',
+  		descripcion: 'Resumen de la diversidad biológica de nuestro planeta',
+  		fecha: '15 Noviembre 2020',      
+      tags: 'biología'
+  	},
+  	{
+  		handle: 'acerca-del-covid19',
+  		titulo: 'Acerca del Covid19',
+      autor: 'Polímata Accidental',
+  		descripcion: 'Evidencia reciente acerca del Covid19',
+  		fecha: '10 Noviembre 2020',      
+      tags: 'biología'
+  	}
   ]
 	
 
