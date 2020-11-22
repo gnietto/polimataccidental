@@ -41,11 +41,11 @@ if (!isDev && cluster.isMaster) {
     {
       handle: 'chile-vuelve-ser-chile',
       titulo: 'Chile vuelve a ser Chile',
-      autor: 'Testimonios',
-      descripcion: 'Testimonio biográfico',
-      fecha: '21 Noviembre 2020',
+      autor: 'Hermógenes Pérez de Arce',
+      descripcion: 'En tiempos de confusión, a los ancianos se les escucha',
+      fecha: '22 Noviembre 2020',
       actualizacion: '-',
-      tags: 'biografias'
+      tags: 'política'
     }
   ]
 	
