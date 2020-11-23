@@ -174,7 +174,6 @@ section .lista-cards {
 }
 section .lista-cards h3 {
   font-size: 1.5rem;
-  text-decoration: italic;
 }
 section .lista-cards p {
   font-size: 1.1rem;
@@ -225,12 +224,15 @@ section .parrafopost p {
 section .parrafopost h3 {
   padding-top: 1rem;
   padding-bottom: -0.2rem;
-  font-weight: 800;
+  font-weight: 600;
+  letter-spacing: -1.5px;
+  font-size: 23px;
 }
 section .titulobiblio {
-  font-size: 1.2rem;
+  font-size: 21px;
   font-weight: 800;
   font-family: Georgia;
+  letter-spacing: -1.3px;
 }
 section .biblio {
   font-size: 1.1rem;
@@ -238,7 +240,7 @@ section .biblio {
   line-height: 1.1rem;
 }
 section .span {
-  font-weight: 800;
+  font-weight: 600;
 }
 section .cursiva {
   font-style: italic;
