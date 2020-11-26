@@ -121,8 +121,8 @@ header p {
 section {
   position: relative;
   display: block;
-  width: 75vw;
-  margin-left: 20vw;
+  width: 78vw;
+  margin-left: 22vw;
   padding: 0 1rem;
 }
 section .presentacion {
@@ -179,10 +179,9 @@ section .lista-cards p {
   font-size: 1.1rem;
 }
 section .lista-cards .cards {
-  width: 320px;
-  height: 30vh;
+  width: 23vw;
   padding: 1.5rem;
-  margin: 20px;
+  margin: 10px;
   border: 15px solid #fff;
   -webkit-box-shadow: 0 5px 35px rgba(0,0,0,0.08);
   box-shadow: 0 5px 35px rgba(0,0,0,0.08);
