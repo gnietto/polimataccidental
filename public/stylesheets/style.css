@@ -123,17 +123,15 @@ section {
   display: block;
   width: 78vw;
   margin-left: 22vw;
-  padding: 0 1rem;
 }
 section .presentacion {
   font-family: Georgia;
-  font-size: 21px;
   line-height: 32px;
-  padding: 1.4rem 3rem 1.2rem 3rem;
+  padding: 1.4rem 5rem 1.2rem 5rem;
 }
 section .presentacion h1 {
-  font-size: 2.2rem;
-  text-align: left;
+  font-size: 3rem;
+  text-align: center;
   padding-bottom: 0.7rem;
 }
 section .presentacion .parrafo {
@@ -170,16 +168,19 @@ section .lista-cards {
   -ms-flex-align: start;
   -webkit-align-items: flex-start;
   align-items: flex-start;
-  padding: 0 2.2rem 0 2.2rem;
+  padding: 4rem 0 0 4.5rem;
+  text-align: center;
 }
 section .lista-cards h3 {
   font-size: 1.5rem;
+  text-align: center;
 }
 section .lista-cards p {
   font-size: 1.1rem;
 }
 section .lista-cards .cards {
   width: 23vw;
+  height: 10rem;
   padding: 1.5rem;
   margin: 10px;
   border: 15px solid #fff;
@@ -192,6 +193,7 @@ section .lista-cards .autor {
   font-family: "Helvetica Neue";
   color: #757575;
   font-size: 1rem;
+  text-align: center;
 }
 section .lista-cards .descripcion {
   padding: 0.6rem 0 1.25rem 0;
