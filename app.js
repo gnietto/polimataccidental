@@ -24,7 +24,7 @@ if (!isDev && cluster.isMaster) {
       handle: 'chile-vuelve-ser-chile',
       titulo: 'Chile vuelve a ser Chile',
       autor: 'Hermógenes Pérez de Arce',
-      descripcion: 'En tiempos de confusión, a los ancianos se les escucha',
+      descripcion: 'Una retrospectiva de largo plazo necesaria en tiempos de confusión política',
       fecha: '22 Noviembre 2020',      
       tags: 'política'
     },
