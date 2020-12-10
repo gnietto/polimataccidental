@@ -21,6 +21,14 @@ if (!isDev && cluster.isMaster) {
 
   const posts = [
     {
+      handle: 'historia-del-dinero',
+      titulo: 'Historia del Dinero',
+      autor: 'Polímata Accidental',
+      descripcion: '(borrador)',
+      fecha: '10 Diciembre 2020',      
+      tags: 'economía'
+    },
+    {
       handle: 'chile-vuelve-ser-chile',
       titulo: 'Chile vuelve a ser Chile',
       autor: 'Hermógenes Pérez de Arce',
