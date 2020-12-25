@@ -21,6 +21,14 @@ if (!isDev && cluster.isMaster) {
 
   const posts = [
     {
+      handle: 'acerca-del-blog',
+      titulo: 'Acerca del Blog',
+      autor: 'Polímata Accidental',
+      descripcion: 'Apreciaciones acerca del nombre del blog',
+      fecha: '25 Diciembre 2020',
+      tags: 'ideas'
+    },
+    {
       handle: 'historia-del-dinero',
       titulo: 'Historia del Dinero',
       autor: 'Polímata Accidental',
