@@ -22,9 +22,9 @@ if (!isDev && cluster.isMaster) {
   const posts = [
     {
       handle: 'acerca-del-blog',
-      titulo: 'Acerca del Blog',
+      titulo: 'Acerca del Presente Blog',
       autor: 'Polímata Accidental',
-      descripcion: 'Apreciaciones acerca del nombre del blog',
+      descripcion: 'Ideas acerca del nombre del presente blog',
       fecha: '25 Diciembre 2020',
       tags: 'ideas'
     },
