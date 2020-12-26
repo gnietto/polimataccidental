@@ -32,7 +32,7 @@ if (!isDev && cluster.isMaster) {
       handle: 'historia-del-dinero',
       titulo: 'Historia del Dinero',
       autor: 'Polímata Accidental',
-      descripcion: '(borrador)',
+      descripcion: 'Brevísimo resumen de historia del dinero',
       fecha: '10 Diciembre 2020',      
       tags: 'economía'
     },
