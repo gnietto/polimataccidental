@@ -1,12 +1,10 @@
 extend ./layout
 
-block content	
-
+block content
 	.lista-cards
 		each post in posts
 			.cards
-				h3 #{post.titulo}
+				a(href=`/posts/${post.handle}`).links #{post.titulo}
 				p.autor #{post.autor}
 				p.autor #{post.fecha}
 				p.descripcion #{post.descripcion}
-				a(href=`/posts/${post.handle}`) Ver post

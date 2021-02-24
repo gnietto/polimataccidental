@@ -2,97 +2,78 @@
 
 global-reset()
 
-header
-  position fixed
-  display block
-  height 100vh
-  width 20vw
-  background url(../imgs/mujer-leyendo--.jpg), linear-gradient(45deg, green, cornflowerblue)
-  background-blend-mode soft-light
-  background-position center
-  background-size cover
-  text-align center
+.cajatitulo
+  display flex
+  flex-direction column
+  flex-wrap wrap
+  justify-content center
+  align-items flex-start
+  width 45vw
+  margin 0 auto
 
-  h1
-    font-size 2rem
+  .titulo
+    color #333
+    font-size 3.25rem
     font-family Georgia
-    color white
-    padding 30vh 1rem 0 1rem
+    margin 1rem 0 0 0
 
-  p
-    font-size 1.1rem
+  .subtitulo
     font-family Georgia
-    color white
-    padding-top 1.2rem 
 
 section
   position relative
   display block
-  width 78vw
-  margin-left 22vw
-  
-
-  .presentacion
-    font-family Georgia    
-    line-height 32px
-    padding 1.4rem 5rem 1.2rem 5rem
-
-    h1
-      font-size 3rem
-      text-align center
-      padding-bottom 0.7rem
-
-    .parrafo
-      padding-bottom 1rem
 
   .lista-cards
     display flex
-    flex-direction row
+    flex-direction column
     flex-wrap wrap
-    justify-content flex-start
-    align-items flex-start
-    padding 4rem 0 0 4.5rem
-    text-align center
-
-    h3
-      font-size 1.50rem
-      text-align center
+    justify-content center
+    align-items center
 
     p
       font-size 1.1rem
 
     .cards    
-      width 23vw
-      height 10rem
+      width 45vw
+      height 6rem
       padding 1.5rem
       margin 10px
-      border 15px solid #fff
-      box-shadow 0 5px 35px rgba(0,0,0,0.08)
-      border-radius 5%
       font-family Georgia
+
+    .links
+      text-decoration none
+      color teal
+      font-size 1.50rem
 
     .autor
       font-family "Helvetica Neue"
       color rgb(117, 117, 117)
       font-size 1rem
-      text-align center
 
     .descripcion
       padding 0.6rem 0 1.25rem 0
       height 3rem
 
+.post
+  display flex
+  flex-direction column
+  flex-wrap wrap
+  justify-content center
+  align-items flex-start
+  width 45vw
+  margin 0 auto
+
   .titulopost
-    font-size 48px
+    font-size 2.25rem
     font-family Georgia
-    text-align center
-    padding 1rem 2rem 0 2rem
+    padding 2rem 0 0 0
 
   .parrafopost
-    font-size 21px
+    font-size 1.3125rem
     line-height 32px
     font-family Georgia    
-    letter-spacing -0.063px
-    margin 2em 15% -0.46em 20%
+    letter-spacing -0.0039375rem
     color rgb(41, 41, 41)
     hyphens manual
     -webkit-hyphens manual

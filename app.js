@@ -19,49 +19,16 @@ if (!isDev && cluster.isMaster) {
 } else {
   const app = express();
 
-  const posts = [
-    {
-      handle: 'acerca-del-blog',
-      titulo: 'Acerca del Presente Blog',
-      autor: 'Polímata Accidental',
-      descripcion: 'Ideas acerca del nombre del presente blog',
-      fecha: '25 Diciembre 2020',
-      tags: 'ideas'
-    },
-    {
-      handle: 'historia-del-dinero',
-      titulo: 'Historia del Dinero',
-      autor: 'Polímata Accidental',
-      descripcion: 'Brevísimo resumen de historia del dinero',
-      fecha: '10 Diciembre 2020',      
-      tags: 'economía'
-    },
-    {
-      handle: 'chile-vuelve-ser-chile',
-      titulo: 'Chile vuelve a ser Chile',
-      autor: 'Hermógenes Pérez de Arce',
-      descripcion: 'Una retrospectiva de largo plazo necesaria en tiempos de confusión política',
-      fecha: '22 Noviembre 2020',      
-      tags: 'política'
-    },
+  const posts = [    
   	{
-  		handle: 'el-arbol-de-la-vida',
+  		handle: 'arbol-de-la-vida',
   		titulo: 'El Árbol de la Vida',
-      autor: 'Polímata Accidental',
-  		descripcion: 'Resumen de la diversidad biológica de nuestro planeta',
+      autor: 'El Estocástico',
+  		descripcion: '¿Conoces la diversidad biológica de nuestro planeta?',
   		fecha: '15 Noviembre 2020',      
       tags: 'biología'
-  	},
-  	{
-  		handle: 'acerca-del-covid19',
-  		titulo: 'Acerca del Covid19',
-      autor: 'Polímata Accidental',
-  		descripcion: 'Evidencia reciente acerca del Covid19',
-  		fecha: '10 Noviembre 2020',      
-      tags: 'biología'
-  	}
-  ]
-	
+  	}  	
+  ];	
 
 	function compile(str, path) {
 		return stylus(str)
