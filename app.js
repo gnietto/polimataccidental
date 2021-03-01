@@ -23,10 +23,10 @@ if (!isDev && cluster.isMaster) {
   	{
   		handle: 'arbol-de-la-vida',
   		titulo: 'El Árbol de la Vida',
-      autor: 'El Estocástico',
+      autor: 'The Cybernetist',
   		descripcion: '¿Conoces la diversidad biológica de nuestro planeta?',
-  		fecha: '15 Noviembre 2020',      
-      tags: 'biología'
+  		fecha: '15 Noviembre 2020',
+      tags: ['biología']
   	}  	
   ];	
 
