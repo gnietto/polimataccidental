@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 5000;
 const express = require('express');
 const stylus = require('stylus');
 const nib = require('nib');
-
+const posts = require('./public/handles/handles');
 
 if (!isDev && cluster.isMaster) {
   console.error(`Node cluster master ${process.pid} is running`);
@@ -18,17 +18,6 @@ if (!isDev && cluster.isMaster) {
   });
 } else {
   const app = express();
-
-  const posts = [    
-  	{
-  		handle: 'arbol-de-la-vida',
-  		titulo: 'El Árbol de la Vida',
-      autor: 'The Cybernetist',
-  		descripcion: '¿Conoces la diversidad biológica de nuestro planeta?',
-  		fecha: '15 Noviembre 2020',
-      tags: ['biología']
-  	}  	
-  ];	
 
 	function compile(str, path) {
 		return stylus(str)
@@ -58,6 +47,6 @@ if (!isDev && cluster.isMaster) {
 	});
 
 	app.listen(PORT, () => {
-    console.log(`Servidor web iniciado en puerto ${PORT}`)
+    console.log(`Servidor iniciado en puerto ${PORT}`)
   });
 }
