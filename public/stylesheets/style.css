@@ -89,7 +89,34 @@ td {
 a img {
   border: none;
 }
-.cajatitulo {
+@font-face {
+  font-family: 'Alegreya';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''), url("../fonts/alegreya-v19-latin-regular.woff") format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-family: 'Alegreya Italic';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''), url("../fonts/alegreya-v19-latin-italic.woff") format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-family: 'Alegreya Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''), url("../fonts/alegreya-sans-v13-latin-regular.woff") format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@media screen and (min-width: 768px) {
+  body {
+    margin: 0 22%;
+  }
+}
+body {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #111;
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -102,172 +129,82 @@ a img {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-lines: multiple;
-  -moz-box-lines: multiple;
-  -o-box-lines: multiple;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -moz-box-pack: center;
-  -o-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: start;
-  -moz-box-align: start;
-  -o-box-align: start;
-  -ms-flex-align: start;
-  -webkit-align-items: flex-start;
-  align-items: flex-start;
-  width: 45vw;
-  margin: 0 auto;
+  overflow-y: scroll;
 }
-.cajatitulo .titulo {
+.titulo {
+  font-family: 'Alegreya Sans';
+  font-size: 5rem;
+  color: #008080;
+  text-align: center;
+}
+.slogan {
+  font-family: Alegreya;
+  font-size: 1.7rem;
+  text-align: center;
+  color: #f0ffff;
+}
+.lista-cards {
+  background-color: #111;
+}
+.cards {
+  background-color: #f0ffff;
   color: #333;
-  font-size: 3.25rem;
-  font-family: Georgia;
-  margin: 1rem 0 0 0;
+  border-radius: 10px;
+  padding: 0.75rem;
+  margin: 0.4rem 0;
+  height: 9rem;
 }
-.cajatitulo .subtitulo {
-  font-family: Georgia;
-}
-section {
-  position: relative;
-  display: block;
-}
-section .lista-cards {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: box;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -moz-box-orient: vertical;
-  -o-box-orient: vertical;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-lines: multiple;
-  -moz-box-lines: multiple;
-  -o-box-lines: multiple;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -moz-box-pack: center;
-  -o-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -moz-box-align: center;
-  -o-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-}
-section .lista-cards p {
-  font-size: 1.1rem;
-}
-section .lista-cards .cards {
-  width: 45vw;
-  height: 6rem;
-  padding: 1.5rem;
-  margin: 10px;
-  font-family: Georgia;
-}
-section .lista-cards .links {
+.links {
+  font-family: 'Alegreya Sans';
+  font-size: 1.5rem;
+  font-weight: 600;
   text-decoration: none;
   color: #008080;
-  font-size: 1.5rem;
 }
-section .lista-cards .autor {
-  font-family: "Helvetica Neue";
-  color: #757575;
+.autor {
   font-size: 1rem;
+  font-family: 'Alegreya Sans';
 }
-section .lista-cards .descripcion {
-  padding: 0.6rem 0 1.25rem 0;
-  height: 3rem;
-}
-.post {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: box;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -moz-box-orient: vertical;
-  -o-box-orient: vertical;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-lines: multiple;
-  -moz-box-lines: multiple;
-  -o-box-lines: multiple;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -moz-box-pack: center;
-  -o-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: start;
-  -moz-box-align: start;
-  -o-box-align: start;
-  -ms-flex-align: start;
-  -webkit-align-items: flex-start;
-  align-items: flex-start;
-  width: 45vw;
-  margin: 0 auto;
-}
-.post .titulopost {
-  font-size: 2.25rem;
-  font-family: Georgia;
-  padding: 2rem 0 0 0;
-}
-.post .parrafopost {
-  font-size: 1.3125rem;
-  line-height: 32px;
-  font-family: Georgia;
-  letter-spacing: -0.0039375rem;
-  color: #292929;
-  -webkit-hyphens: manual;
-  -moz-hyphens: manual;
-  -ms-hyphens: manual;
-  hyphens: manual;
-  -webkit-hyphens: manual;
-  -ms-hyphens: manual;
-}
-.post .parrafopost p {
-  padding-top: 1rem;
-}
-.post .parrafopost h3 {
-  padding-top: 1rem;
-  padding-bottom: -0.2rem;
-  font-weight: 600;
-  letter-spacing: -1.5px;
-  font-size: 23px;
-}
-.post .titulobiblio {
-  font-size: 21px;
-  font-weight: 800;
-  font-family: Georgia;
-  letter-spacing: -1.3px;
-}
-.post .biblio {
+.descripcion {
+  font-family: Alegreya;
   font-size: 1.1rem;
-  font-family: Georgia;
-  line-height: 1.1rem;
+  padding-top: 0.5rem;
 }
-.post .span {
-  font-weight: 600;
+/* contenido post */
+.post {
+  color: #f0ffff;
+  margin-top: 2rem;
 }
-.post .cursiva {
-  font-style: italic;
+.titulopost {
+  font-family: 'Alegreya Sans';
+  font-size: 3.2rem;
+}
+.parrafopost {
+  font-family: Alegreya;
+  font-size: 1.4rem;
+}
+.parrafopost > p {
+  padding: 0.5rem 0;
+  letter-spacing: 0.06rem;
+}
+.parrafopost > h3 {
+  font-family: 'Alegreya Sans';
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 1.2rem 0 0.5rem 0;
+}
+.titulobiblio {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 1.75rem 0 0.5rem 0;
+}
+.span {
+  font-weight: bold;
+  font-family: 'Alegreya Italic';
+}
+.cursiva {
+  font-family: 'Alegreya Italic';
+}
+.biblio > p {
+  padding: 0.35rem;
 }
