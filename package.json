@@ -1,5 +1,5 @@
 {
-  "name": "polimata-accidental",
+  "name": "thecybernetist",
   "version": "1.0.0",
   "description": "blog personal",
   "main": "app.js",
@@ -10,12 +10,12 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "gnietto",
+  "author": "thecybernetist",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
     "nib": "^1.1.2",
-    "pug": "^2.0.4",
+    "pug": "^3.0.2",
     "stylus": "^0.54.7"
   }
 }
