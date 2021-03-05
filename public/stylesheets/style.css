@@ -145,6 +145,7 @@ body {
 }
 .lista-cards {
   background-color: #111;
+  margin-top: 2rem;
 }
 .cards {
   background-color: #f0ffff;
@@ -181,6 +182,7 @@ body {
 .titulopost {
   font-family: 'Alegreya Sans';
   font-size: 3.2rem;
+  color: #008080;
 }
 .parrafopost {
   font-family: Alegreya;
