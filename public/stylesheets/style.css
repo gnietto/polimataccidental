@@ -107,6 +107,11 @@ a img {
   font-weight: 400;
   src: local(''), url("../fonts/alegreya-sans-v13-latin-regular.woff") format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+@media screen and (max-width: 768px) {
+  body {
+    margin: 0;
+  }
+}
 @media screen and (min-width: 768px) {
   body {
     margin: 0 22%;
@@ -155,7 +160,7 @@ body {
   margin-top: 2rem;
 }
 .cards {
-  background-color: #f0ffff;
+  background-color: rgba(255,250,240,0.729);
   color: #333;
   border-radius: 10px;
   padding: 0.75rem;
@@ -182,7 +187,7 @@ body {
 .post {
   color: #111;
   margin-top: 2rem;
-  background-color: #f0ffff;
+  background-color: rgba(255,250,240,0.729);
   border-radius: 10px;
   padding: 1.2rem 0.6rem;
 }
