@@ -25,14 +25,6 @@ global-reset()
 			url('../fonts/alegreya-sans-v13-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-@media screen and (max-width: 768px)
-	body
-		margin 0
-
-@media screen and (min-width: 768px)
-	body
-		margin 0 22%
-
 body
 	box-sizing border-box
 	background-color #111
@@ -85,6 +77,7 @@ body
 	font-size 1.4rem 
 	padding-top .5rem
 
+
 /* contenido post */
 .post
 	color #111
@@ -126,3 +119,16 @@ body
 
 .biblio > p 
 	padding: .5rem 0
+
+
+/* media */
+@media screen and (max-width: 370px)
+	.titulo
+		font-size 4rem
+
+	.titulopost
+		font-size 2.5rem 
+
+@media screen and (min-width: 600px)
+	body
+		margin 0 12%

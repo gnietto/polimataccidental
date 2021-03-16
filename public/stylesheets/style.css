@@ -107,16 +107,6 @@ a img {
   font-weight: 400;
   src: local(''), url("../fonts/alegreya-sans-v13-latin-regular.woff") format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-@media screen and (max-width: 768px) {
-  body {
-    margin: 0;
-  }
-}
-@media screen and (min-width: 768px) {
-  body {
-    margin: 0 22%;
-  }
-}
 body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -224,4 +214,18 @@ body {
 }
 .biblio > p {
   padding: 0.5rem 0;
+}
+/* media */
+@media screen and (max-width: 370px) {
+  .titulo {
+    font-size: 4rem;
+  }
+  .titulopost {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 600px) {
+  body {
+    margin: 0 12%;
+  }
 }
